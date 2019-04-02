@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  background: white;
+  font-family: 'Source Code Pro', monospace;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-box > h1 {
+  height: 25vh;
+  font-size: 4.5em;
+  background-color: #FC0D1B;
+  color: white;
+  padding-top: 3%;
+  text-transform: uppercase;
+}
+
+#main-form {
+  padding-top: 2.5%;
+}
+
+.select-products-heading {
+  font-size: 2.5em;
+  color: black;
+}
+
+.products-box {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin: 0 auto;
+}
+
+.product {
+  width: 265px;
+}
+
+input[type="checkbox"] {
+  display: block;
+  margin: 15px auto;
+  width: 2%;
+
+}
+
+input[type="checkbox"]:after {
+  width: 12%;
+}
+
+
+.product > label > img {
+  width: 100%;
+}
+
+.display-total {
+  padding-bottom: 3%;
+
+}
+
+.payment-details-box {
+  width: 75vw;
+  margin: 0 auto;
+  border: 1px solid grey;
+  margin-bottom: 5%;
+}
+
+.payment-details-heading {
+  font-size: 2em;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 2%;
+  background-color: #FC0D1B;
+  text-transform: uppercase;
+  color: white;
+}
+
+.payment-details-box > label {
+  font-size: 1.2em;
+  margin: 5% 0;
+  width: 90px;
+}
+
+.payment-details-box > .box > input[type="text"] {
+  font-size: 1.5em;
+  width: 25%;
+  border: none;
+  border: solid 2px black;
+}
+
+.box {
+  padding: 2% 0;  
+}
+.invalid-field {
+  border: solid 1px red;
+}
+
+.cc-invalid-text {
+  position: relative;
+  top: 5px;
+}
+
+.phone-invalid-text {
+  position: relative;
+  right: 250px;
+}
+
+.payment-details-box > input[type="radio"] {
+  margin-right: 4%;
+}
+
+input:focus {
+  outline: none;
+}
+
+.credit-card-box > label {
+  font-size: 1.5em;
+}
+
+.credit-card-box > input {
+  font-size: 1.1em;
+  width: 20%;
+  border: none;
+  border: solid 2px black;
+}
+
+.form-buttons {
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+.form-buttons > input {
+  font-size: 1.2em;
+  width: 15%;
+  height: 3em;
+  border: none;
+  background-color: #FC0D1B;
+  color: white;
+}

@@ -1,0 +1,93 @@
+/* CSS FONT IMPORT */
+
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou');
+
+/* Helper Classes */
+
+.center {
+  text-align: center;
+}
+
+.white {
+  color: white;
+}
+
+.text-spacing {
+  letter-spacing: .1em;
+}
+
+.paragraph-description {
+  padding-top: 2%;
+  font-family: monospace;
+  line-height: 2em;
+}
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+body {
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 1.2em;
+  color: black;
+  background: #ECE9E6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+}
+
+#main-heading {
+  color: white;
+  letter-spacing: .1em;
+  padding-top: 5%;
+  margin-bottom: 0;
+  margin-right: 5%;
+  margin-left: 5%;
+  text-align: center;
+  font-size: 2.2em;
+}
+
+#main-content-box {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+
+#main-content-box > div {
+  width: 100%;
+  position: relative;
+  left: 10%;
+  border: 2px solid black;
+  padding: 3vh;
+  margin: 5vh 0;
+}
+
+.text-description {
+  width: 70%;
+  float: right;
+}
+
+img {
+  margin: auto 0;
+  width: 20%;
+  max-width: 100%;
+  height: auto;
+}
+
+header, footer {
+  height: 25vh;
+  background-color: #009FB2;
+}

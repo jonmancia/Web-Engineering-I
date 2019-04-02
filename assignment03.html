@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Jonathan Mancia's Improved Home Page</title>
+
+		<style>
+			body {
+					box-sizing: border-box; 
+					padding: 0;
+					margin: 0; 
+					font-family: 'Trebuchet MS', sans-serif; 
+					/*background-image: radial-gradient( rgb(120, 233, 210), #F8FFAE);*/
+background-image: linear-gradient(to bottom, #F8FFAE 0%, #1fc8db 51%, #F8FFAE 75%);
+					width: 100vw;
+					overflow-x: hidden;
+			}
+
+			section, article {
+				margin: auto;
+				width: 65%;
+			}
+
+			section > header {
+				width: 50%; 
+				margin: auto;
+			}
+
+			section > h1 {
+				text-align: center; 
+				color: #f44336; 
+				margin-top: 1em;
+				margin-bottom: 1em; 
+				font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+				font-size: 2em; 
+				text-transform: uppercase;
+				letter-spacing: .15em;
+			}
+			
+			figure {
+				text-align: center;
+			}
+
+			figure > img {
+				width: 60%;
+				border: solid 1px rgb(65, 61, 61);
+				border-radius: 20px;
+			}
+
+			figure > figcaption {
+				margin-top: 5%;
+				margin-bottom: 10%; 
+				font-size: 1.3em
+			}
+
+			blockquote {
+				text-align: center; 
+				width: 100%; 
+				margin-top: 2%;
+				font-style: italic;
+				font-size: 2em;
+				margin-bottom: 2%; 
+				color: #ec644b;
+			}
+
+			section > hr {
+				width: 35%;
+				margin: auto;
+			}
+
+			h2 {
+				font-size: 2.2em;
+			}
+
+			body > h2 {
+				font-size: 2em; 
+				margin-top: 2%;
+				margin-bottom: 2%;
+				text-align: center;
+			}
+
+			table {
+				width: 80%;
+				text-align: center;
+				margin-left: 10%;
+				margin-right: 10%;
+				margin-bottom: 2%; 
+				font-size: 1.3em;
+			}
+
+			th {
+				border: 1px solid black;
+			}
+
+			p {
+				line-height: 1.7em; 
+				letter-spacing: .05em;
+			}
+
+			body > h3 {
+				text-align: center;
+			}
+
+			a {
+				text-decoration: none;
+				transition: font-size .2s;
+			}
+
+			body > hr {
+				width: 45%;
+			}
+
+			.gadget_header {
+				font-size: 2.2em;
+			}
+
+			#form {
+				width: 100%;
+			}
+
+			a:hover {
+				font-size: 1.2em;
+			}
+
+			select, option {
+				width: 100%;
+				padding: 0;
+				margin: 0;
+				border: none;
+				transition: background-color 2s;
+			}
+
+			select:hover, option:hover {
+				background-color: royalblue;
+			}
+
+			input[type="submit"], input[type="reset"] {
+				border: none;
+				font-size: 1.5em;
+				margin-bottom: 2%;
+				background-color: red;
+				border-radius: 5px;
+				transition: font-size .25s;
+				color: white;
+			}
+
+			input[type="submit"]:hover, input[type="reset"]:hover {
+				font-size: 2em;
+				cursor: pointer;
+			}
+
+			textarea {
+				border: none;
+			}
+		
+			.form_elements {
+				display: flex;
+				align-content: center;
+				width: 100%;
+			}
+
+			.comments, .course_selection,
+			.year_selection, .semester_selection,
+			.select_time {
+				flex: 1;
+				margin: 40px;
+			}
+
+			.center {
+				text-align: center;
+				margin-top: 3%;
+			}
+
+		</style>
+	</head>
+
+	<!-- Website Body -->
+
+	<body>
+		<section>
+			<h1>
+					Welcome to Jonathan Mancia's Home Page</h1>
+			<header>
+				<figure>
+					<img src="me.jpg" alt="Jonathan's Photograph">
+					<figcaption>
+						<b>Name:</b> Jonathan A Mancia <br>
+						<b>Major:</b> BS in Software Engineering <br>
+						<b>Hometown:</b>  Irving, Texas
+					</figcaption>
+				</figure>
+			</header>
+		</section>
+
+			<article>
+				<header>
+					<h2 style="text-align: center;">About Me</h2>
+				</header>
+				<p>
+					<span style="color: red; font-family: Impact, Haettenschweiler, 
+					'Arial Narrow Bold', sans-serif; font-size: 2em;">
+					Hi there! &#x1F44B;</span> My name is Jonathan Mancia and I am a technology 
+					<span style="font-size: 2em;">&#x1F4BB;</span> enthusiast. 
+					My passion originated back in the early 2000s when my parents gifted
+					me my first computer. Initially, I was not as excited about the gift given
+					that the 'hottest' gadget back then was Sony's gaming console <span style="font-size: 2em;">&#x1F3AE;</span>, 
+					the first generation Playstation and was definitely a gadget I was not getting but
+					eventually my computer started to grown on me. The possibilities from gaming
+					to Word processing where actually there and I fell in love with all the possibilities. Today,
+					I'm pursing my passion in Software Engineering (click <span style="font-size: 2em; position: relative; top: 10px;">&#x1F449;</span><a href="#winter_19_schedule">here</a>
+					<span style="font-size: 2em; position: relative; top: 10px;">&#x1F448;</span> to checkout my current school schedule OR if you're interested in some one-to-one tutoring,
+					submit your request by filling out a form <span style="font-size: 2em; position: relative; top: 10px;">&#x1F449;</span><a href="#form">here</a>
+					<span style="font-size: 2em; position: relative; top: 10px;">&#x1F448;</span>) to understand how programs and
+					computers work in the smallest level to continue tinkering and figuring out ways technology
+					can make my life easier. Thanks for stopping by!
+				</p>
+			</article>
+
+		<section id="favorite_gadget_section" style="margin-top: 3%;">
+			<h2 style="text-align: center;" class="gadget_header">My Favorite Gadget</h2>
+			<a href="https://en.wikipedia.org/wiki/Raspberry_Pi" target="_blank">
+				<img src="https://cdn-images-1.medium.com/max/2400/1*3c-LB7bViYj340J63R-nUA.jpeg" 
+				alt="Raspberry Pi Photograph" style="width: 25%; float: left; margin-right: 2%; border-radius: 25px; ">
+			</a>
+			<p style="margin-left: 5px;">A <span style="font-weight: bold;">Raspberry Pi</span> is a credit card-sized computer. 
+				Hobbysts use them for small projects such as learning to code,
+				play retro video games, and even to install home security cameras! There's even a smaller version of the Raspberry Pi
+				called the Raspberry Pi Zero which is just under 2 inches long and under an inch wide. The computer can boot an entire
+				open source operating system called Raspbian. <span style="font-weight: bold;">Click on the image to learn more!</span>
+			</p>
+		</section>
+
+		<hr style="margin-top: 7%; clear: both;">
+		<blockquote>
+				"If we look at the questioners versus the non-questioners, <br>
+				who seems to be coming out ahead?" <br>- Warren Berger &#x1F914;
+		</blockquote>
+		
+		<hr>
+		<h2 style="margin-top: 5%;">Class Schedule:</h2>
+		<table id="winter_19_schedule" style="margin-top: 3%;">
+			<tr>
+				<th>Course #:</th>
+				<th>Course Description:</th>
+				<th>Sec #:</th>
+				<th>Class Time:</th>
+				<th>Class Location: </th>
+			</tr>
+			<tr>
+				<td>CS213</td>
+				<td>Web Engineering I</td>
+				<td>Section 1</td>
+				<td>9:45AM - 11:15AM</td>
+				<td>STC 398</td>
+			</tr>
+
+			<tr>
+				<td>CS235</td>
+				<td>Data Structures</td>
+				<td>Section 2</td>
+				<td>11:30AM - 12:30PM</td>
+				<td>STC 231</td>
+			</tr>
+
+			<tr>
+				<td>CS225</td>
+				<td>Database Development & Design</td>
+				<td>Section 1</td>
+				<td>12:45PM - 1:45PM</td>
+				<td>STC 353</td>
+			</tr>
+
+			<tr>
+				<td>FDSCI212</td>
+				<td>Inq/Innov Through Thinking</td>
+				<td>Section 1</td>
+				<td>8:00AM - 9:30AM</td>
+				<td>Austin 216A</td>
+			</tr>
+		</table>
+
+		<h3><a href="/~jmancia/index.html">Go to CS213 Assignments</a></h3>
+
+		<hr style="margin-top: 5%;">
+
+		<h2 style="margin-top: 5%;">Interested to know how to succeed in some of the courses I've taken?</h2>
+		<h3 style="text-align: center; color: red;">Fill out the form below!</h3>
+
+		<section>
+			<form id="form">
+				<div class="form_elements">
+					<div class="semester_selection">
+						<h3>Select a semester</h3>
+						<input type="radio" name="semester" value="f" checked="checked"/> Fall <br>
+						<input type="radio" name="semester" value="w"/> Winter <br>
+						<input type="radio" name="semester" value="s"/> Spring <br>
+					</div>
+
+					<div class="year_selection">
+						<h3>Select your year</h3>
+						<select name="year">
+							<option value="2019" selected>2019</option>
+							<option value="2020">2020</option>
+							<option value="2021">2021</option>
+							<option value="2022">2022</option>
+							<option value="2023">2023</option>
+						</select>
+					</div>
+
+					<div class="course_selection">
+						<h3>Select your courses</h3>
+						
+							<input type="checkbox" name="CS124" value="cs124">CS124 - Intro to Software Development<br>
+							<input type="checkbox" name="CS165" value="cs165">CS165 - Object Oriented Programming<br>
+							<input type="checkbox" name="CS235" value="cs235">CS235 - Data Structures<br>
+					
+					</div>
+
+					<div class="select_time">
+						<h3>Select your time</h3>
+						<select name="cs165Time" id="1">
+							<option value="9">9:00 - 9:50</option>
+							<option value="10">10:00 - 10:50</option>
+						</select>
+					</div>
+
+					<div class="comments">
+						<h3>What would you like to understand better?</h3>
+						<textarea name="comments" cols="30" rows="10" placeholder="Enter your text here..."></textarea>
+					</div>
+				</div>
+
+				<h3 style="text-align: center;">Are you ready for this?</h3>
+				<input type="text" placeholder="Type yes here..." style="display: flex; margin: auto;">
+				<br>
+
+				<div class="center">
+					<input type="submit" style="display: inline-block">
+					<input type="reset" style="display: inline-block">
+				</div>
+			</form>
+
+		</section>
+
+		<footer>
+<p style="padding-top: 3%; text-align: center; color: #1fc8db;">Website created and designed by Jonathan Mancia
+	&#x1F680;<p>
+		</footer>
+	</body>
+
+
+</html>

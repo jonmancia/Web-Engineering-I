@@ -1,0 +1,102 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: rgba(228, 241, 254, 1);
+}
+
+.main {
+    width: 85%;
+    height: 1200px;
+    margin: 0 auto;
+    /* background-color: rgba(218, 223, 225, 1); */
+    margin-top: 2.5%;
+    text-align: center;
+}
+
+.main__container {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    width: 50%;
+}
+
+.margin-top-5 {
+    margin-top: 5%;
+}
+
+.margin-bottom-5 {
+    margin-bottom: 5%;
+}
+
+.padding-top-5 {
+    padding-top: 5%;
+}
+
+.padding-bottom-5 {
+    padding-bottom: 5%;
+}
+
+.result-table {
+    width: 85%;
+    margin-top: -30px;
+}
+
+.usa {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.404), rgb(255, 255, 255, .4)),
+        url("https://www.almanac.com/sites/default/files/image_nodes/american-flag-1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.mexico {
+    background-position: left;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.9), rgb(255, 255, 255, 0)),
+        url("http://www.futfanatico.com/wp-content/uploads/2016/05/Mexico-Flag-1.png");
+    background-size: cover;
+}
+
+.canada {
+    background-position: center;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.1)),
+        url("https://upload.wikimedia.org/wikipedia/commons/6/68/Canada_flag_halifax_9_-04.JPG");
+    background-size: cover;
+}
+
+.russia {
+    background-position: center;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgb(255, 255, 255, .4)),
+        url("http://vestnikkavkaza.net/upload2/files/aga.jpg");
+    background-size: cover;
+}
+
+#student-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#student-table th {
+    border: 1px solid black;
+}
+
+#student-table td {
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+}
+
+.cities {
+    height: 15%;
+}

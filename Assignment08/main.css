@@ -1,0 +1,244 @@
+/* CSS Font Import */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,700');
+
+/* HR
+    color: #F9C848
+   Background and highlights
+    color: #f2fcfe
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    /* No side scrolling */
+    background: #f2fcfe;
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+    height: 100vh;
+}
+
+#logo a {
+    position: absolute;
+    top: 1.5%;
+    left: 2.5%;
+    color: white;
+    font-size: 5vw;
+    text-decoration: none;
+}
+
+#main-navigation {
+    width: inherit;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    text-align: center;
+    background-color: rgba(44, 62, 80, 1);
+}
+
+#main-navigation ul {
+    position: relative;
+    top: 2.5%;
+}
+
+#main-navigation li {
+    display: inline-block;
+    padding-right: 5%;
+}
+
+#main-navigation li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #F9C848;
+}
+
+hr {
+    background-color: #F9C848;
+    height: 1%;
+    border: none;
+}
+
+#hero {
+    height: 60vh;
+    width: inherit;
+    background-image: url(computer-desk.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+#hero-main {
+    text-align: center;
+    position: relative;
+    top: 40%;
+    font-size: 2rem;
+}
+
+#benefits {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5% auto;
+}
+
+#benefits>.card {
+    width: 250px;
+    height: 250px;
+    background-color: rgba(44, 62, 80, 1);
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: center;
+    padding-top: 1.5%;
+}
+
+.card h3 {
+    font-size: 2rem;
+    color: #F9C848;
+    padding-top: 1%;
+}
+
+.card p {
+    color: white;
+    padding-top: 1%;
+}
+
+#call-to-action {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#call-to-action button {
+    border: none;
+    width: 125px;
+    height: auto;
+    padding: 2%;
+    background-color: #F9C848;
+    box-shadow: 5px 10px rgba(44, 62, 80, 1);
+    cursor: pointer;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+#footer {
+    display: flex;
+    height: 12vh;
+    width: inherit;
+    background-color: rgba(44, 62, 80, 1);
+}
+
+#footer-content {
+    color: #f2fcfe;
+    width: inherit;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1.5%;
+}
+
+/************* Media Queries ***********/
+/* Navigation */
+@media screen and (max-width: 685px) {
+    #main-navigation li {
+        display: block;
+        padding-top: 2.5%;
+    }
+}
+
+/* Benefit cards */
+@media screen and (max-width: 1016px) {
+    .card:last-child {
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 631px) {
+    .card {
+        margin-top: 5%;
+    }
+
+    #call-to-action button {
+        margin-bottom: 5%;
+    }
+}
+
+#about-header {
+    height: 40vh;
+    width: inherit;
+    background-image: linear-gradient(to right bottom, #aaa, rgba(255, 255, 255, 0.671)),
+        url(team-hifive.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#about-heading {
+    text-align: center;
+    position: relative;
+    top: 40%;
+    font-size: 2rem;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5%;
+    margin-bottom: 5%;
+}
+
+.content h3 {
+    width: 100%;
+    font-size: 2rem;
+    padding-bottom: 2%;
+}
+
+.content>p {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+#catalog-header {
+    height: 40vh;
+    width: inherit;
+    background-image: linear-gradient(to right bottom, #aaa, rgba(255, 255, 255, 0.493)),
+        url(vr-headset.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#catalog-header h1 {
+    text-align: center;
+    position: relative;
+    top: 40%;
+    font-size: 2rem;
+}
+
+#contact-header {
+    height: 40vh;
+    width: inherit;
+    background-image: linear-gradient(to right bottom, #aaa, rgba(255, 255, 255, 0.507)),
+        url(team-members.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#contact-header h1 {
+    text-align: center;
+    position: relative;
+    top: 40%;
+    font-size: 2rem;
+}
+
+label {
+    padding: 3%;
+}
+
+label:first-child {
+    padding-top: 2%;
+}
+
+input,
+button {
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
